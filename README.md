@@ -6,7 +6,6 @@ A responsive web application built with React and bootstrapped with Create React
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Development](#development)
 - [Build and Deployment](#build-and-deployment)
 - [Contributing](#contributing)
