@@ -3,8 +3,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, rgba(106, 17, 203, 0.5), rgba(37, 117, 252, 0.5));
+    
+    background: linear-gradient(to right, rgba(221, 234, 238, 0.853), rgb(136, 226, 248));
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -21,18 +21,55 @@ body::before {
     background-repeat: no-repeat;
     height: 100%; /* Make sure the body takes full height */
     margin: 0;
-   
 }
 
+/* Form container style */
 .form-container {
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
-    border-radius: 10px;
+    background-color: rgb(255, 251, 251); /* Slightly transparent white */
+    border-radius: 25px;
     padding: 40px; /* Increased padding for better spacing */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgb(13, 21, 19);
     animation: fadeIn 0.5s ease-in-out;
-    width: 800px; /* Increased width */
+    width: 100%; /* Increased width */
+    font-family: 'Georgia', sans-serif;
 }
 
+/* Input and select fields style */
+input,
+select {
+    transition: all 0.3s ease-in-out;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid #c13939;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Focus effect for input and select fields */
+input:focus,
+select:focus {
+    border: 2px solid #927daa; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(190, 182, 199, 0.5);
+}
+
+/* Button style */
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #29262d; /* Primary button color */
+    color: rgb(232, 223, 223);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #075635; /* Change button color on hover */
+}
+
+/* Animation for form container */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -44,21 +81,17 @@ body::before {
     }
 }
 
-input,
-select {
-    transition: all 0.3s ease-in-out;
+/* Additional styling for a smoother layout */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-input:focus,
-select:focus {
-    border: 2px solid #6a11cb; /* Change border color on focus */
-    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
-}
-
-button {
-    transition: background-color 0.3s ease-in-out;
-}
-
-button:hover {
-    background-color: #b31ebb; /* Change button color on hover */
+h1 {
+    color: #0f0718;
+    text-align: center;
+    margin-bottom: 40px;
 }
