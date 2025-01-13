@@ -47,7 +47,7 @@ const Form = () => {
 			{/* Banner Section */}
 			<Box
 				component="img"
-				src={`${process.env.PUBLIC_URL}/banner.jpg`}
+				src={`${process.env.PUBLIC_URL}../public/Banner.jpg`}
 				alt="Banner Image"
 				sx={{
 					width: "1350px",
